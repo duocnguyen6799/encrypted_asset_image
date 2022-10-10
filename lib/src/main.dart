@@ -114,8 +114,10 @@ class _EncryptedAssetImageState extends State<EncryptedAssetImage> {
             isAntiAlias: widget.isAntiAlias,
             filterQuality: widget.filterQuality,
           );
+        } else if (snapshot.hasError) {
+          return ErrorWidget('Failed to load image');
         }
-        return ErrorWidget('Fail to load image');
+        return const SizedBox();
       },
     );
   }
