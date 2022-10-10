@@ -1,8 +1,7 @@
 name: encrypted_asset_image
 description: A widget to display a encrypted image from asset folder
 version: 0.0.1
-authors:
-  - DuocNP <duocnguyen6799@gmail.com>
+author: DuocNP <duocnguyen6799@gmail.com>
 homepage: https://github.com/duocnguyen6799/encrypted_asset_image
 
 environment:
