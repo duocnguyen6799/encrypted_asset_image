@@ -104,7 +104,6 @@ class EncryptedAssetImage extends StatefulWidget {
 }
 
 class _EncryptedAssetImageState extends State<EncryptedAssetImage> {
-
   FileCryptor get fileCryptor => widget.fileCryptor;
 
   @override

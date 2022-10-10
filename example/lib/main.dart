@@ -18,7 +18,8 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     fileCryptor = FileCryptor(
-      key: 'VihW5CNfR9Fmhgz6b5AbUDQPsAzRWCA8', // This is your key with a length equal to 32
+      key:
+          'VihW5CNfR9Fmhgz6b5AbUDQPsAzRWCA8', // This is your key with a length equal to 32
       iv: 16, // iv is Initialization vector encryption times
       dir: '', // Not required for this widget
     );
