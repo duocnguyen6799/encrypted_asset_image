@@ -36,46 +36,67 @@ class EncryptedAssetImage extends StatefulWidget {
     this.loadingBuilder,
   }) : super(key: key);
 
+  /// Path of the asset image
   final String assetPath;
 
+  /// Instance of FileCryptor
   final FileCryptor fileCryptor;
 
+  /// The param of [Image.memory]
   final double scale;
 
+  /// The param of [Image.memory]
   final ImageFrameBuilder? frameBuilder;
 
+  /// The param of [Image.memory]
   final ImageLoadingBuilder? loadingBuilder;
 
+  /// The param of [Image.memory]
   final ImageErrorWidgetBuilder? errorBuilder;
 
+  /// The param of [Image.memory]
   final double? width;
 
+  /// The param of [Image.memory]
   final double? height;
 
+  /// The param of [Image.memory]
   final Color? color;
 
+  /// The param of [Image.memory]
   final Animation<double>? opacity;
 
+  /// The param of [Image.memory]
   final FilterQuality filterQuality;
 
+  /// The param of [Image.memory]
   final BlendMode? colorBlendMode;
 
+  /// The param of [Image.memory]
   final BoxFit? fit;
 
+  /// The param of [Image.memory]
   final AlignmentGeometry alignment;
 
+  /// The param of [Image.memory]
   final ImageRepeat repeat;
 
+  /// The param of [Image.memory]
   final Rect? centerSlice;
 
+  /// The param of [Image.memory]
   final bool matchTextDirection;
 
+  /// The param of [Image.memory]
   final bool gaplessPlayback;
 
+  /// The param of [Image.memory]
   final String? semanticLabel;
 
+  /// The param of [Image.memory]
   final bool excludeFromSemantics;
 
+  /// The param of [Image.memory]
   final bool isAntiAlias;
 
   @override
@@ -122,6 +143,7 @@ class _EncryptedAssetImageState extends State<EncryptedAssetImage> {
     );
   }
 
+  /// Using to get a encrypted image from asset
   Future<Uint8List> _getEncryptedImage({required String assetPath}) async {
     ByteData bytesData = await rootBundle.load(assetPath);
     Uint8List uInt8List = bytesData.buffer
